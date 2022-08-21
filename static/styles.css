@@ -260,28 +260,122 @@ transition: 0.5s ease-in;
 }
 
 .main-home{
-    max-height: 80vh;
+    /* max-height: 80vh; */
+    /* max-width: 100%; */
     width: 100%;
     margin-left: 20px;
     margin-top: 10px;
     background-color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    overflow: hidden;
+    background-image: url('/img/image-bg1.png');
+    background-position: 500px;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    flex: 1;
+    flex-shrink: 0;
+
 }
 
 .main-home .content-box{
     /* border: 2px solid red; */
     /* width: 53%; */
     /* height: 75vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-top: 0vh; */
+    margin-left: 50px;
+    background-color: transparent;
+    /* z-index: 99; */
+    /* width: 40%; */
 }
+.main-home .content-box p{
+    margin-bottom: 0;
+}
+.main-home .content-box .top-line{
+   font-size: 1.5rem;
+/* font-family: 'League Spartan', sans-serif; */
+/* font-weight: 800; */
+font-weight: 400;
+/* color: var(--orange); */
+/* line-height: 5%; */
+line-height: normal;
+
+}
+.main-home .content-box  .name-text{
+font-size: 3.5rem;
+text-transform: uppercase;
+color: var(--dark-color);
+font-weight: 800;
+
+}
+.main-home .content-box  .name-text span{
+
+color: var(--orange);
+letter-spacing: 2px;
+
+}
+.main-home .content-box .text-prof{
+font-size: 2rem;
+font-weight: 800;
+text-transform: capitalize;
+margin-bottom: 20px;
+
+}
+.main-home .content-box .text-desc{
+margin-bottom: 30px;
+
+}
+.main-home .content-box .link-btns a{
+padding: 10px;
+text-decoration: none;
+/* color: var(--dark-color); */
+color: #fff;
+/* background-color: var(--orange); */
+background-color: var(--dark-color);
+margin-right:10px;
+}
+.main-home .content-box .link-btns a:hover{
+background-color: var(--orange);
+}
+
 .main-home .image-box{
     /* border: 2px solid black; */
     /* width: 45%; */
     /* height: 75vh; */
+    position: relative;
     
 }
+/* .main-home::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: var(--orange);
+   z-index:-3 ;
+    
+} */
+.main-home .image-box #model-img{
+    margin-right: 30px;
+    margin-top: 20px;
+    
+}
+.main-home .image-box #home-div-bg{
+   position: absolute;
+   /* top: -100px; */
+   left: -100px;
+  
+    
+}
+
 /* Home CSS Ends */
