@@ -274,9 +274,12 @@ transition: 0.5s ease-in;
     position: relative;
     /* flex-wrap: wrap-reverse; */
     overflow: hidden;
-    background-image: url('/img/image-bg1.png');
-    background-position: 500px;
-    background-size: 1000px;
+    /* background-image: url('/img/image-bg1.png'); */
+    background-image: url('/img/image-bg.jpg');
+    /* background-position: 500px;
+    background-size: 1000px; */
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
     flex-shrink: 0;
