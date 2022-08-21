@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Open+Sans:wght@300;400;800&family=Russo+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+/* font-family: 'Russo One', sans-serif; */
+/* font-family: 'League Spartan', sans-serif; */
+
+}
+:root{
+
+    --orange: rgb(255, 184, 51);
+    --dark-color: #252626;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  background-color: #c7c7c7;
+}
+.headbar {
+  text-align: center;
+  min-width: 100vw;
+  max-height: 10vh;
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.headbar span {
+  color: var(--orange);
+}
+
+.navBar {
+  /* margin-top: 10vh; */
+  position: absolute;
+  top: 8%;
+  left: -100%;
+  width: 200px;
+  height: 95vh;
+  /* background-color: black; */
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  /* transition: left 0.5s ease-in-out linear;  */
+  transition:  0.5s ease-in-out; 
+  z-index: 999;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#closeBtn{
+    /* width: 25px; */
+    /* padding: 0px 15px; */
+    font-size: 3rem;
+    background-color: none;
+    text-decoration: none;
+    position: absolute;
+    top: -18px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 99;
+    padding-top: 5px;
+    /* color: #fff; */
+  color: #000;
+
+}
+.initialNav{
+    /* position: absolute; */
+    position: fixed;
+    top: 8%;
+  left: 0%;
+  width: 80px;
+  /* width: 80px; */
+  height: 95vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 9;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.title{
+    position: absolute;
+    /* max-width:100% ; */
+    top: -20%;
+    left: 110px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.title::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 45%;
+    left: -10px;
+    border-radius: 1px;
+    transform: rotate(45deg) translateY(-50%);
+    font-size: 20px;
+    /* background-color: red; */
+    background-color: white;
+    
+}
+
+.initialNav ul li:hover a .title{
+    opacity: 1;
+    left: 65px;
+    visibility: visible;
+}
+#openBtn{
+    /* text-decoration: none;
+    font-size: 20px;
+    margin: 20px 0px;
+    /* margin-left: 100px; */
+    /* cursor: pointer;
+    color: #000; */
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    margin-top: 10px;
+    position: absolute;
+    right: -12px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+.navBar ul, .initialNav ul {
+    text-align: center;
+    padding-left: 0;
+    width: 90%;
+    /* position: relative; */
+}
+.navBar ul li, .initialNav ul li {
+    list-style: none;
+    /* margin: 55px 0px; */
+    margin-bottom: 55px ;
+    width: 100%;
+    /* border: 1px solid white; */
+    padding: 10px;
+    
+}
+
+.navBar ul li:nth-child(1), .initialNav ul li:nth-child(1){
+    margin-top: 50px;
+}
+.navBar ul li a , .initialNav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+}
+.navBar ul li a{
+/* color: #fff; */
+color: #000;
+font-weight: 400;
+
+}
+.navBar ul li{
+transition: 0.5s ease-in;
+
+}
+
+.navBar ul li:hover{
+    background-color: var(--orange);
+}
+
+.indicator{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 51px;
+    /* background-color: #000; */
+    border-radius: 50%;
+    /* top: 60px; */
+    /* top: 8.7%; */
+    left: 5px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    /* background-color: #000; */
+    background-color:var(--orange);
+    border-radius: 50%;
+}
+.initialNav ul li:nth-child(1).active ~ .indicator{
+    transform: translateY(calc(70px * 0));
+}
+.initialNav ul li:nth-child(2).active  ~ .indicator{
+    transform: translateY(calc(105px * 1));
+    
+}
+.initialNav ul li:nth-child(3).active ~ .indicator{
+    transform: translateY(calc(105px * 2));
+    
+}
+.initialNav ul li:nth-child(4).active ~ .indicator{
+    transform: translateY(calc(105px * 3));
+    
+}
+.initialNav ul li:nth-child(5).active ~ .indicator{
+    transform: translateY(calc(105px * 4));
+    
+}
+
+.initialNav ul li.active > a i{
+    color: #fff;
+}
+
+
+/* Home CSS Starts */
+.home-div{
+    margin-top: 12vh;
+    /* text-align: center; */
+}
+.home-div .head{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-div .head .prev-bar{
+  width: 25%;
+  background-color: var(--dark-color);
+  height: 2px;
+  margin-right: 10px;
+  
+}
+.home-div .next-bar{
+    width: 25%;
+    background-color: var(--dark-color);
+    height: 2px;
+    margin-left: 10px;
+}
+.home-div .head h2{
+    /* color: rgb(255, 184, 51); */
+    /* text-shadow: 0px 0px 10px; */
+    letter-spacing: 5px;
+}
+
+.main-home{
+    max-height: 80vh;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.main-home .content-box{
+    /* border: 2px solid red; */
+    /* width: 53%; */
+    /* height: 75vh; */
+}
+.main-home .image-box{
+    /* border: 2px solid black; */
+    /* width: 45%; */
+    /* height: 75vh; */
+    
+}
+/* Home CSS Ends */
