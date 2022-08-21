@@ -1,0 +1,10 @@
+.services-section{
+padding-top: 40px;
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.services-section .cards-container{
+position: relative;
+width: 100%;
+}

@@ -30,8 +30,8 @@
     <nav class="navBar" id="navBar">
       <a id="closeBtn">&times;</a>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="">Download CV</a></li>
@@ -41,12 +41,12 @@
       <a id="openBtn"></a>
       <ul>
         <li class="active">
-          <a href="#"><i class="fa-solid fa-house "></i>
+          <a href="#home"><i class="fa-solid fa-house "></i>
             <span class="title">Home</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#about">
             <i class="fa-solid fa-address-card"></i>
             <span class="title">About</span>
           </a>
@@ -76,7 +76,7 @@
     <!-- navbar ends -->
 
     <!-- home page starts -->
-    <div class="container home-div">
+    <div class="container home-div" id="home">
         <div class="head">
             <span class="prev-bar"></span>
             <h2>HOME</h2>
@@ -107,10 +107,40 @@
         </div>
     </div>
     <!-- home page ends -->
-<div class="container about-section"></div>
     <!-- about section starts -->
-
+    <div class="container about-section" id="about">
+        <div class="head">
+            <span class="prev-bar"></span>
+            <h2>ABOUT</h2>
+            <span class="next-bar"></span>
+        </div>
+        <div class="container main-about">
+            <div class="about-image">
+                <img src="./img/model2.jpg" id="about-img1"alt="">
+                <!-- <img src="./img/model2.jpg"  id="about-img2" alt=""> -->
+                <span id="about-img2"></span>
+                <span id="about-img3"></span>
+            </div>
+            <div class="about-content">
+                <h2>I'm <span class="about-name">Parth Parmar</span> and i am a  <span class="about-prof">Web Developer.</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae officiis et impedit molestias fugiat modi perferendis autem recusandae quo praesentium laudantium hic corporis asperiores exercitationem explicabo iusto officia eius enim qui, saepe, tenetur tempore voluptatem nulla! Dolores nesciunt quas quos non quisquam eum similique repudiandae. Fuga amet dignissimos tenetur vero?</p>
+                <a href="#">Contact Me</a>
+            </div>
+        </div>
+    </div>
     <!-- about section ends -->
+    <!-- services section starts -->
+    <div class="container services-section">
+        <div class="head">
+            <span class="prev-bar"></span>
+            <h2>SERVICES</h2>
+            <span class="next-bar"></span>
+        </div>
+        <div class="container cards-container">
+            
+        </div>
+    </div>
+    <!-- services section ends -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
