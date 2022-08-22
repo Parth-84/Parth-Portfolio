@@ -6,7 +6,12 @@
   font-family: 'Open Sans', sans-serif;
 /* font-family: 'Russo One', sans-serif; */
 /* font-family: 'League Spartan', sans-serif; */
-scroll-behavior: smooth;
+
+}
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding: 100px; */
+    scroll-padding: 65px;
 
 }
 :root{
