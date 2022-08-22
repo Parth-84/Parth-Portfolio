@@ -84,6 +84,7 @@ border: 2px solid var(--dark-color);
 font-size: 20px;
 text-decoration: none;
 color: var(--dark-color);
+font-weight: 500;
 }
 .about-section .main-about .about-content a:hover{  
 background-color: var(--orange);
@@ -113,6 +114,7 @@ border: none;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s ease-in;
+    margin: 0px 5px;
     margin-top: 10px;
     box-shadow: 0px 0px 20px var(--dark-color);
 
