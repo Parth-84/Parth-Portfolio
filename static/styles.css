@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Open+Sans:wght@300;400;800&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Open+Sans:wght@300;400;500;700;800&family=Russo+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 html{
     scroll-behavior: smooth;
     /* scroll-padding: 100px; */
-    scroll-padding: 65px;
+    scroll-padding: 75px;
 
 }
 :root{
@@ -27,13 +27,18 @@ body {
 .headbar {
   text-align: center;
   min-width: 100vw;
-  max-height: 10vh;
+  min-height: 10vh;
+  max-height: 12vh;
   background-color: var(--dark-color);
   color: #fff;
   padding: 5px;
+  padding-top: 10px;
   position: fixed;
   top: 0;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .headbar span {
   color: var(--orange);
@@ -55,7 +60,7 @@ body {
   padding-top: 10px;
   /* transition: left 0.5s ease-in-out linear;  */
   transition:  0.5s ease-in-out; 
-  z-index: 999;
+  z-index: 99999;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 #closeBtn{
@@ -77,7 +82,7 @@ body {
 .initialNav{
     /* position: absolute; */
     position: fixed;
-    top: 8%;
+    top: 10%;
   left: 0%;
   width: 80px;
   /* width: 80px; */
@@ -87,7 +92,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
-  z-index: 9;
+  z-index: 99;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 .title{
@@ -228,6 +233,10 @@ transition: 0.5s ease-in;
     transform: translateY(calc(105px * 4));
     
 }
+.initialNav ul li:nth-child(6).active ~ .indicator{
+    transform: translateY(calc(105px * 5));
+    
+}
 
 .initialNav ul li.active > a i{
     color: #fff;
@@ -271,16 +280,17 @@ transition: 0.5s ease-in;
     /* max-height: 80vh; */
     /* max-width: 100%; */
     width: 100%;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 10px;
     background-color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
     position: relative;
-    /* flex-wrap: wrap-reverse; */
+    flex-wrap: wrap-reverse;
     overflow: hidden;
     /* background-image: url('/img/image-bg1.png'); */
     background-image: url('/img/image-bg.jpg');
@@ -295,18 +305,15 @@ transition: 0.5s ease-in;
 }
 
 .main-home .content-box{
-    /* border: 2px solid red; */
-    /* width: 53%; */
-    /* height: 75vh; */
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* margin-top: 0vh; */
+    /* width: 700px; */
+    margin-top: 20px;
     margin-left: 50px;
     background-color: transparent;
-    /* z-index: 99; */
-    /* width: 40%; */
+  
 }
 .main-home .content-box p{
     margin-bottom: 0;
@@ -345,6 +352,9 @@ margin-bottom: 20px;
 margin-bottom: 30px;
 
 }
+.main-home .content-box .link-btns{
+margin-bottom: 20px;
+}
 .main-home .content-box .link-btns a{
 padding: 10px;
 text-decoration: none;
@@ -360,10 +370,9 @@ letter-spacing: 1px;
 }
 
 .main-home .image-box{
-    /* border: 2px solid black; */
-    /* width: 45%; */
-    /* height: 75vh; */
+
     position: relative;
+    /* min-width: 500px; */
     
 }
 /* .main-home::after{
@@ -391,3 +400,67 @@ letter-spacing: 1px;
 }
 
 /* Home CSS Ends */
+
+/* @media only screen and (max-width:1024px){
+.initialNav{
+    left: -7%;
+}
+.navBar{
+    display: none;
+}
+
+} */
+@media only screen and (max-width:900px){
+.initialNav{
+    left: -8%;
+}
+/* .navBar{
+    display: none;
+} */
+}
+@media only screen and (max-width:805px){
+.initialNav{
+    left: -9%;
+}
+}
+@media only screen and (max-width:600px){
+.initialNav{
+    left: -12%;
+}
+.main-home .image-box img{
+    width: 400px;
+}
+}
+@media only screen and (max-width:500px){
+.initialNav{
+    left: -15%;
+}
+}
+
+@media only screen and (max-width:468px){
+    .initialNav{
+        left: -16%;
+    }
+    .main-home .image-box img{
+        width: 300px;
+    }
+    /* .main-home .content-box{
+        width: 300px;
+    } */
+    .main-home .content-box  .name-text{
+        font-size: 2.5rem;
+      
+        
+        }
+        .main-home .content-box .text-prof{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        
+        }
+    
+}
+@media only screen and (max-width:400px){
+    .initialNav{
+        left: -18%;
+    }
+    }
