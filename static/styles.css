@@ -247,14 +247,16 @@ transition: 0.5s ease-in;
     align-items: center;
 }
 .head .prev-bar{
-  width: 25%;
+  /* width: 25%; */
+  width: calc(100%/3);
   background-color: var(--dark-color);
   height: 2px;
   margin-right: 10px;
   
 }
 .next-bar{
-    width: 25%;
+    /* width: 25%; */
+    width: calc(100%/3);
     background-color: var(--dark-color);
     height: 2px;
     margin-left: 10px;
