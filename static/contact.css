@@ -43,7 +43,8 @@ width: 100%;
 }
 .contact-section .contact-section-container .contact-desc .desc-link-text p span{
  font-size: 1.2rem;
- font-weight: 600;
+ font-weight: 500;
+ color: #000;
 }
 .contact-section .contact-section-container .contact-form{
 /* width: 50%; */
