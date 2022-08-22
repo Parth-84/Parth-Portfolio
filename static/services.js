@@ -3,7 +3,7 @@ function show_cards(){
     for(let i=0;i<cards.length;i++){
     let windowHeight = window.innerHeight;
     let card_top = cards[i].getBoundingClientRect().top;
-    let card_px = 70;
+    let card_px = 50;
 if(card_top < windowHeight - card_px){
     cards[i].classList.add("show-service");
 }
