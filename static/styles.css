@@ -147,6 +147,11 @@ body {
     cursor: pointer;
     border-radius: 5px;
     background-color: #fff;
+    
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-color: var(--orange);
+
 
 }
 .navBar ul, .initialNav ul {
@@ -280,8 +285,9 @@ transition: 0.5s ease-in;
     /* max-height: 80vh; */
     /* max-width: 100%; */
     width: 100%;
-    margin-left: 10px;
-    margin-top: 10px;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    margin: 10px 0px 50px 10px;
     background-color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -425,7 +431,7 @@ letter-spacing: 1px;
 }
 @media only screen and (max-width:600px){
 .initialNav{
-    left: -12%;
+    left: -13%;
 }
 .main-home .image-box img{
     width: 400px;

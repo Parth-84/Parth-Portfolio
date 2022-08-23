@@ -94,10 +94,16 @@ padding-top: 30px;
 .contact-section .contact-section-container .contact-form button{
   border: none;
   padding: 10px;
-  background-color: var(--orange);
+  /* background-color: var(--orange); */
+  background-color: var(--dark-color);
   /* border-radius: 10px; */
   color: #fff;
   /* font-weight: 600; */
+}
+.contact-section .contact-section-container .contact-form button:hover{
+ 
+  background-color: var(--orange);
+letter-spacing: 1px;
 }
 
 input{

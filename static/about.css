@@ -1,5 +1,5 @@
 .about-section{
-    padding-top: 50px;
+    padding-top: 10px;
     /* margin-bottom: 0px; */
     min-height: 100vh;
     position: relative;
@@ -8,7 +8,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 20px 0px;
     position: relative;
     flex-wrap: wrap;
     flex-shrink: 0;
@@ -91,16 +92,35 @@ background-color: var(--orange);
 border: none;
     color: #fff;
 }
-
+.expertise-heading{
+    text-align: center;
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.expertise-heading h2{
+   text-transform: uppercase;
+   width:300px ;
+   background-color: #fff;
+   padding: 10px;
+   border-radius: 20px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: var(--orange);
+}
 .about-cards-container{
     display: flex;
     width: 100%;
     /* max-height: 650px; */
-    min-height: 400px;
+    min-height: 320px;
     max-height: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: 5px;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:flex-start;
     flex-wrap: wrap;
     /* overflow-y: auto; */
 }
