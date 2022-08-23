@@ -1,7 +1,8 @@
 .about-section{
     padding-top: 10px;
     /* margin-bottom: 0px; */
-    min-height: 100vh;
+    /* max-height: 100vh; */
+    max-height: auto;
     position: relative;
 }
 .about-section .main-about{
@@ -112,11 +113,13 @@ border: none;
    color: var(--orange);
 }
 .about-cards-container{
+    position: relative;
     display: flex;
     width: 100%;
     /* max-height: 650px; */
     min-height: 320px;
     max-height: auto;
+    /* max-height: 550px; */
     /* margin-top: 20px; */
     margin-top: 5px;
     justify-content: space-evenly;
@@ -156,9 +159,9 @@ color: var(--orange);
     font-size: 5rem;
     text-align: center;
 }
-.about-cards-container .about-card .card-icon h3{
-    /* margin-top: 15px; */
-}
+/* .about-cards-container .about-card .card-icon h3{
+    margin-top: 15px;
+} */
 .about-cards-container .about-card .card-content{
     /* display: none; */
     transition: 0.8s ease-in-out;

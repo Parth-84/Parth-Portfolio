@@ -23,13 +23,13 @@ text-transform: uppercase;
     margin-top: 20px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 .social-links-container .social-links-card{
     width: 200px;
     height: 100px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     overflow-y: hidden;
     transition: 0.5s;
     position: relative;

@@ -11,6 +11,7 @@ else{
     cards[i].classList.remove("show-service");
     
 }
+// console.log(card_top);
 }
 // console.log(cards);
 }

@@ -4,7 +4,7 @@
 }
 .contact-section .contact-section-container{
     margin-top: 20px;
-    min-height: 60vh;
+    /* min-height: 60vh; */
     position: relative;
     display: flex;
     flex-wrap: wrap;
