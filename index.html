@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./static/styles.css" />
     <link rel="stylesheet" href="./static/about.css" />
     <link rel="stylesheet" href="./static/services.css" />
+    <link rel="stylesheet" href="./static/skills.css" />
     <link rel="stylesheet" href="./static/contact.css" />
     <link rel="stylesheet" href="./static/social.css" />
   </head>
@@ -28,6 +29,9 @@
         Portfo<span>lio</span>
       </h1>
     </header>
+    <div class="back-to-top">
+      <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
     <!-- navbar starts -->
     <nav class="navBar" id="navBar">
       <a id="closeBtn">&times;</a>
@@ -35,6 +39,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#connect-social">Connect</a></li>
         <li><a href="#">Download CV</a></li>
@@ -62,6 +67,12 @@
           </a>
         </li>
         <li>
+          <a href="#skills">
+            <i class="fa-brands fa-stack-overflow"></i> 
+            <span class="title">Skills</span>
+          </a>
+        </li>
+        <li>
           <a href="#contact"
             ><i class="fa-solid fa-phone"></i>
             <span class="title">Contact</span>
@@ -86,7 +97,7 @@
     <!-- navbar ends -->
 
     <!-- home page starts -->
-    <div class="container home-div" id="home">
+    <section class="container home-div" id="home">
       <div class="head">
         <span class="prev-bar"></span>
         <h2>HOME</h2>
@@ -112,10 +123,10 @@
           <img src="./img/model1.png" id="model-img" alt="" />
         </div>
       </div>
-    </div>
+    </section>
     <!-- home page ends -->
     <!-- about section starts -->
-    <div class="container about-section" id="about">
+    <section class="container about-section" id="about">
       <div class="head">
         <span class="prev-bar"></span>
         <h2>ABOUT</h2>
@@ -187,16 +198,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- about section ends -->
     <!-- services section starts -->
-    <div class="container services-section" id="services">
+    <section class="container services-section" id="services">
       <div class="head">
         <span class="prev-bar"></span>
         <h2>SERVICES</h2>
         <span class="next-bar"></span>
       </div>
-      <div class=" container scrollwindow"></div>
+      <!-- <div class=" container scrollwindow"></div> -->
       <div class="container services-cards-container">
         <div class="services-card">
           <div class="service-icon">
@@ -236,10 +247,66 @@
         </div>
         
       </div>
-    </div>
+    </section>
     <!-- services section ends -->
+    <!-- skills section starts -->
+    <section class="container skills-section" id="skills">
+      <div class="head">
+        <span class="prev-bar"></span>
+        <h2>TECH SKILLS</h2>
+        <span class="next-bar"></span>
+      </div>
+      <div class="container skills-section-container">
+        <div class="skills-image-box">
+          <img src="./img/skills-secction-img.png" alt="">
+        </div>
+        <div class="skills-card-container">
+          <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h5>HTML 5</h5>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-css3"></i>
+            <h5>CSS 3</h5>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-square-js"></i>
+            <h5>JavaScript</h5>
+          </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-bootstrap"></i>
+              <h5>Bootstrap 5</h5>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-php"></i>
+              <h5>PHP</h5>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-react"></i>
+              <h5>React</h5>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-c"></i>
+              <h5>C/C++</h5>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-java"></i>
+              <h5>java</h5>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-wordpress"></i>
+              <h5>WordPress</h5>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <h5>MySQL</h5>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
 <!-- contact section starts -->
-<div class="container contact-section" id="contact">
+<section class="container contact-section" id="contact">
   <div class="head">
     <span class="prev-bar"></span>
     <h2>CONTACT ME</h2>
@@ -253,7 +320,7 @@
       </div>
       <div class="desc-link-text">
         <div><i class="fa-solid fa-user"></i><p><span>Name</span><br>Parth Parmar</p></div>
-        <div><i class="fa-solid fa-location-dot"></i><p><span>Address</span><br>Baroda</p></div>
+        <div><i class="fa-solid fa-location-dot"></i><p><span>Address</span><br>Baroda, India</p></div>
         <div><i class="fa-solid fa-envelope"></i><p><span>Email</span><br>parthparmar25.pp@gmail.com</p></div>
       </div>
     </div>
@@ -277,11 +344,11 @@
     </div>
   </div>
 
-</div>
+</section>
 <!-- contact section ends -->
 
 <!-- social media starts -->
-<div class="container social-media-section" id="connect-social">
+<section class="container social-network-section" id="connect-social">
   <div class="head">
     <span class="prev-bar"></span>
     <!-- <h2>SOCIAL MEDIA</h2> -->
@@ -306,12 +373,16 @@
       <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </div>
-</div>
+</section>
 <!-- social media ends -->
 <!-- footer starts -->
-<footer class="container main-footer">
-
+<footer class="main-footer">
+  <div class="container">
+    <p>Copyrights &#169; <span id="current-year">2022</span> <span style="color:var(--orange); ">Parth Parmar</span>. All Rights Reserved</p>
+  </div>
 </footer>
+
+
 <!-- footer ends -->
 
     <!-- Optional JavaScript; choose one of the two! -->
