@@ -45,7 +45,7 @@ window.onscroll = (param) => {
     let i=0;
   sections.forEach((section) => {
     let sectionTop = section.getBoundingClientRect().top;
-    if (sectionTop > 60 && sectionTop < 400) {
+    if (sectionTop > 60 && sectionTop < 425) {
       initialNavLi.forEach((link) => {
         if (initialNavLi.indexOf(link) === i) {
           link.classList.add("active");
@@ -60,53 +60,6 @@ window.onscroll = (param) => {
 }
 
 };
-// let home = document.getElementById('home');
-// let about = document.getElementById('about');
-// let services = document.getElementById('services');
-// let skills = document.getElementById('skills');
-// let contact = document.getElementById('contact');
-// let social = document.getElementById('connect-social');
-
-// let indi_links = [home,about,services,contact,social];
-// window.onscroll = ()=>{
-//     let current="";
-//     indi_links.forEach(section=>{
-//         const sectionTop = section.offsetTop;
-//         if(pageYOffset >= sectionTop-60){
-//             current = section.getAttribute("id");
-//         }
-//     });
-
-//     initialNavLi.forEach((ele)=>{
-//         ele.classList.remove("active");
-//         if(ele.classList.contains(current)){
-//             ele.classList.add("active");
-//         }
-
-//     })
-// }
-
-// let indi_links = [home,about,services,skills,contact,social];
-// window.onscroll = ()=>{
-//     let windowHeight = window.innerHeight
-//   let i=0;
-// indi_links.forEach(element=>{
-
-//     let ele_top = element.getBoundingClientRect().top;
-//         if(ele_top < windowHeight-500){
-//           initialNavLi.forEach(link=>{
-//             if(initialNavLi.indexOf(link)===i){
-//                 link.classList.add('active');
-//             }
-//             else{
-//                 link.classList.remove("active");
-//             }
-//           });
-//         }
-//         i++;
-
-//     });
-// };
 
 // Automatically update year
 let current_year = document.getElementById("current-year");
