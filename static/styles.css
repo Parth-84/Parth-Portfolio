@@ -330,7 +330,7 @@ transition: 0.5s ease-in;
     overflow: hidden;
     /* background-image: url('/img/image-bg1.png'); */
     /* background: rgba(0,0,0,0.1) url('/img/image-bg.jpg'); */
-    background: url('/img/image-bg.jpg');
+    background: url('../img/image-bg.jpg');
     /* background-position: 500px;
     background-size: 1000px; */
     background-position: center;
@@ -553,3 +553,4 @@ letter-spacing: 1px;
         font-size: 1.5rem;
         color: var(--orange);
     }
+

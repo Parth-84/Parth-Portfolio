@@ -28,7 +28,7 @@ let initialNavLi = Array.from(document.querySelectorAll(".initialNav li"));
 initialNavLi.forEach((li) => {
   li.addEventListener("click", () => {
     // console.log("Entered");
-    window.onscroll();
+    // window.onscroll();
     while (index < initialNavLi.length) {
       initialNavLi[index].classList.remove("active");
       index++;
