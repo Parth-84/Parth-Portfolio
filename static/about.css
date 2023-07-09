@@ -21,13 +21,13 @@
 }
 .about-section .main-about .about-image #about-img1{
     width: 300px;
-    height: 300px;
+    /* height: 300px; */
     transform: rotate(-5deg);
     border-radius: 10%;
 }
 .about-section .main-about .about-image #about-img2{
     width: 315px;
-    height: 315px;
+    height: 355px;
     transform: rotate(6deg);
     border-radius: 10%;
     position: absolute;
@@ -37,9 +37,9 @@
     z-index: -1;
 }
 .about-section .main-about .about-image #about-img3{
-    width: 305px;
-    height: 305px;
-    transform: rotate(3deg);
+    width: 300px;
+    height: 345px;
+    transform: rotate(1deg);
     border-radius: 10%;
     position: absolute;
     background-color: var(--dark-color);

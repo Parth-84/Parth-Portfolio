@@ -424,8 +424,10 @@ letter-spacing: 1px;
     
 } */
 .main-home .image-box #model-img{
+    max-width: 425px;
     margin-right: 30px;
     margin-top: 20px;
+    /* height: 650px; */
     
 }
 .main-home .image-box #home-div-bg{
@@ -472,14 +474,22 @@ letter-spacing: 1px;
 .initialNav{
     left: -15%;
 }
+#model-img{
+    object-fit: contain;
+}
 }
 
 @media only screen and (max-width:468px){
     .initialNav{
         left: -16%;
     }
-    .main-home .image-box img{
-        width: 300px;
+    .main-home .image-box #model-img{
+        width: 325px;
+        margin-right: 0px;
+        height: auto;
+    }
+    .main-home .image-box{
+        padding-right: 0;
     }
     /* .main-home .content-box{
         width: 300px;
